@@ -33,3 +33,34 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.muted { color: var(--muted); }
+
+/* 首页卡片与模块行入口 */
+.stat-link { text-decoration: none; color: inherit; cursor: pointer; transition: border-color .15s, box-shadow .15s; }
+.stat-link:hover { border-color: var(--brand); box-shadow: 0 1px 6px rgba(31, 111, 235, .15); }
+.module-row { cursor: pointer; }
+.module-row:hover { background: #f0f6ff; }
+.module-name { color: var(--brand); font-weight: 600; }
+
+/* 未办结/异常清单 */
+.filter-item select { padding: 5px 8px; border: 1px solid var(--border); border-radius: 6px; background: #fff; }
+.reconcile { font-size: 13px; margin: 0 0 12px; padding: 8px 10px; border-radius: 6px; }
+.reconcile.ok { background: #ecfdf3; color: #027a48; border: 1px solid #abefc6; }
+.reconcile.warn { background: #fffaeb; color: #b54708; border: 1px solid #fedf89; }
+.blocker-list { display: flex; flex-direction: column; gap: 10px; }
+.blocker-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.blocker-card.failed { border-color: #fda29b; }
+.blocker-head { display: flex; align-items: center; gap: 12px; padding: 10px 12px; cursor: pointer; user-select: none; }
+.blocker-head:hover { background: #f8fafc; }
+.blocker-caret { color: var(--muted); font-size: 10px; transition: transform .15s; }
+.blocker-caret.open { transform: rotate(90deg); }
+.blocker-name { min-width: 96px; }
+.blocker-badges { display: flex; gap: 8px; flex: 1; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; white-space: nowrap; }
+.badge.pending { background: #fffaeb; color: #b54708; }
+.badge.abnormal { background: #fef3f2; color: #b42318; }
+.badge.amount { background: #eff4ff; color: #1d4ed8; }
+.blocker-state { font-size: 12px; white-space: nowrap; }
+.blocker-body { padding: 0 12px 12px 30px; }
+.blocker-loading { padding: 8px 0; margin: 0; }
+.blocker-table { margin-top: 4px; }

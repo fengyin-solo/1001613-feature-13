@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 from app.routers import flight as router_flight
+from app.routers import blockers as router_blockers
 from app.routers import stand as router_stand
 from app.routers import apron as router_apron
 from app.routers import bridge as router_bridge
@@ -25,4 +26,4 @@ from app.routers import agreement as router_agreement
 from app.routers import settlement as router_settlement
 from app.routers import training as router_training
 
-ROUTERS = [router_flight, router_stand, router_apron, router_bridge, router_deicing, router_fueling, router_baggage, router_cargo, router_catering, router_shuttle, router_towing, router_loadsheet, router_permit, router_gse, router_safety, router_agreement, router_settlement, router_training]
+ROUTERS = [router_flight, router_stand, router_apron, router_bridge, router_deicing, router_fueling, router_baggage, router_cargo, router_catering, router_shuttle, router_towing, router_loadsheet, router_permit, router_gse, router_safety, router_agreement, router_settlement, router_training, router_blockers]
